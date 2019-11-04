@@ -1,0 +1,41 @@
+@import url(header.css);
+@import url(cartao.css);
+@import url(resumos.css);
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/fundo-compr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+h1, h2, h3, ul {
+    margin: 0;
+}
+
+.checkout {
+    background-color: #ffff;
+    width: 688px;
+    height: 558px;
+} 
+
+
+
+.checkout main {
+    display: flex;
+   
+}
+
+.checkout main .cartao {
+    height: 100px;
+    width: 55%;
+}
+
+.checkout main .resumos {
+    width: 45%;
+}
+
