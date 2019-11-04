@@ -12,21 +12,21 @@ https://www.youtube.com/watch?v=-QWGj1D636w
 		Atribuir o número 8 a uma variável chamada tomates
 *******************************************************************************/
 
-    
+        let tomates = 8;
 
 /******************************************************************************* 
 	Tarefa 2: 
 		Atribuir o número quatro e meio, a uma variável chamada melancias 
 *******************************************************************************/
 
-
+        let melancias = 4.5;
 
 /******************************************************************************* 
   Tarefa 3: 
   	Atribuir o texto Bom dia à uma variável chamada mensagem 
 *******************************************************************************/
 
-
+    let mensagem = "Bom dia";
 
 /******************************************************************************* 
 	Tarefa 4: 
@@ -34,3 +34,5 @@ https://www.youtube.com/watch?v=-QWGj1D636w
     booleano falso para uma variável chamada desligado.
 *******************************************************************************/
 
+   let ligado = true;
+   let desligado = false;
