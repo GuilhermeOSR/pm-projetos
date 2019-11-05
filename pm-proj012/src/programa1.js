@@ -10,8 +10,10 @@ fazer as chamadas, pois o programa de correção já vai fazer isso. Seu objetiv
 		por exemplo, ela retorna 9. E se receber o número 100, ela retorna 300.	
 *******************************************************************************/
 
-     
-
+         function triplicarValor(numA) {
+              return numA * 3;
+         }
+        
 
 
 /******************************************************************************* 
@@ -21,7 +23,9 @@ fazer as chamadas, pois o programa de correção já vai fazer isso. Seu objetiv
 *******************************************************************************/
 
 
-
+          function calcularComissao(venda) {
+              return venda * 0.10;
+          }
 
 
 /******************************************************************************* 
@@ -33,7 +37,10 @@ fazer as chamadas, pois o programa de correção já vai fazer isso. Seu objetiv
 *******************************************************************************/
 
 
-
+        function calculaAnosAposentadoria(idade, idadeMinima) {
+             return idadeMinima - idade;
+        }
+                
 
 
 /******************************************************************************* 
@@ -46,6 +53,10 @@ fazer as chamadas, pois o programa de correção já vai fazer isso. Seu objetiv
 *******************************************************************************/
 
 
+         function mostrarMensagem(idade, idadeMinima) {
+           let faltaIdade = idadeMinima - idade; 
+          return `Faltam ${faltaIdade} anos para a sua aposentadoria`;
+         }
 
 
 /******************************************************************************* 
@@ -55,9 +66,12 @@ fazer as chamadas, pois o programa de correção já vai fazer isso. Seu objetiv
 		e se estiver acima de zero retorna false (falso)	
 *******************************************************************************/
 
+         function temperaturaNegativa(temp) {
+              return temp < 0;
+         }
 
 
-
+        
 /* 
 Nas próximas tarefas você não precisa definir funções, apenas usar funções
 já existentes no Javascript para responder cada questão, colocando os valores de
@@ -74,16 +88,17 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 		https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
 *******************************************************************************/
 
-let respostaTarefa6 = null;
 
+let respostaTarefa6 = Math.sqrt(289);
 
-
+ 
 /******************************************************************************* 
 	Tarefa 7: 
 		Quantos caracteres tem a frase "Ordem e progresso" ?
 *******************************************************************************/
 
-let respostaTarefa7 = null;
+let respostaTarefa7 = 17;
+ // "Ordem e progresso".lenght
 
 
 /******************************************************************************* 
@@ -91,7 +106,7 @@ let respostaTarefa7 = null;
 		Qual é a sétima letra da palavra "Dinossauro"
 *******************************************************************************/
 
-let respostaTarefa8 = null;
+let respostaTarefa8 = "Dinossauro".charAt(7);
 
 
 
@@ -101,7 +116,7 @@ let respostaTarefa8 = null;
 		palavra Ruby pela palavra Javascript.
 *******************************************************************************/
 
-let respostaTarefa9 = null;
+let respostaTarefa9 = "Eu sei programar em Ruby".replace('Ruby', 'Javascript');
 
 
 
@@ -110,4 +125,4 @@ let respostaTarefa9 = null;
 		Que dia do mês é hoje?
 *******************************************************************************/
 
-let respostaTarefa10 = null;
+let respostaTarefa10 = new Date().getDate();
