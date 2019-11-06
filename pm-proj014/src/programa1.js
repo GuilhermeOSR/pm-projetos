@@ -8,10 +8,20 @@
 			RJ     -> 18,20
 			Outros -> 35,90
 *******************************************************************************/
+       function calcularFrete(estado){
+           switch(estado) {
+               case "MG":
+                   return 12.50;
+               case "SP":
+                   return 23.90;
+               case "RJ":
+                   return 18.20;
+               default: 
+                  return 35.90;
+         }              
+     };
 
-
-
-
+       
 
 
 
@@ -24,9 +34,37 @@
 *******************************************************************************/
 
 
-
-
-
+          function nomeMes(mes) {
+              switch(mes) {
+                  case 1:
+                      return "janeiro";
+                  case 2:
+                      return "fevereiro";
+                  case 3:
+                      return "março";
+                  case 4: 
+                      return "abril";
+                  case 5:
+                      return "maio";
+                  case 6: 
+                      return "junho";
+                  case 7:
+                      return "julho";
+                  case 8: 
+                      return "agosto";
+                  case 9: 
+                      return "setembro";
+                  case 10: 
+                      return "outubro";
+                  case 11: 
+                      return "novembro";
+                  case 12:
+                      return "dezembro";
+                  default:
+                      return "Mês inválido";
+              }
+               
+          }
 
 
 /*******************************************************************************
@@ -37,3 +75,30 @@
 		Use essa referência para abranger todos os elementos:
 		https://pt.wikipedia.org/wiki/Tabela_peri%C3%B3dica#Estrutura_da_tabela_peri%C3%B3dica		
 *******************************************************************************/
+
+                 function tabelaPeriodica(sigl) {
+                       switch(sigl) {
+                           case "Zn":
+                               return "zinco";
+                           case "Pt":
+                               return "platina";
+                           case "Sn":
+                               return "estanho";
+                           case "Br":
+                               return "bromo";
+                           default:
+                               return "Nothing";
+                                                     
+                       } 
+                 }
+
+
+
+
+
+
+
+
+
+
+
