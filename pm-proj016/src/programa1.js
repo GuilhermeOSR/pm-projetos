@@ -6,7 +6,12 @@
 *******************************************************************************/
 
 
-
+             function diasUteis() {
+                    
+              let dias = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira'];
+    
+                return dias;
+                }
 
 
 /*******************************************************************************
@@ -18,6 +23,12 @@
 *******************************************************************************/
 
 
+                 function semanaCompleta() {
+                    let dias = diasUteis();
+                    dias.push('Sábado', 'Domingo');
+                     
+                      return dias;
+                 }
 
 
 
@@ -31,8 +42,18 @@
 		https://pt.wikipedia.org/wiki/Tabela_peri%C3%B3dica#Estrutura_da_tabela_peri%C3%B3dica
 *******************************************************************************/
 
+           function tabelaPeriodica() {
 
-
+                const tabela = [
+                    {Sigla: 'H', nome: 'hidrogênio', numeroAtomico: 1},
+                    {Sigla: 'He', nome: "hélio", numeroAtomico: 2},
+                    {Sigla: 'Li', nome: "lítio", numeroAtomico: 3},
+                    {Sigla: 'Be', nome: "berílio", numeroAtomico: 4},
+                    {Sigla: 'B', nome: "boro", numeroAtomico: 5}
+                    
+                ];
+                  return tabela;
+           }
 
 
 /*******************************************************************************
@@ -42,3 +63,19 @@
 		retornado no array.
 		Exemplo: numerosImpares(10) deve retornar o array [1, 3, 5, 7, 9]
 *******************************************************************************/
+  
+                function numerosImpares(limite) {
+                      let numeros = [];
+                       for(let i = 0; i <= limite; i++) {
+                           if(i % 2 !== 0) {
+                               numeros.push(i);
+                           }
+                       }
+                    return numeros;
+                }
+
+
+
+
+
+
