@@ -14,20 +14,23 @@
 		~> "Motor 1000 cilindradas a álcool está desligado"
 
 *******************************************************************************/
-
-
-       new motor(2000, 'gasolina').ligar {
-           return "Motor 2000 cilindradas a gasolina está ligado";
-       }
-
-       new moto(1000, 'álcool').desligar() {
-           return "Motor 1000 cilindradas a álcool está desligado";
-       }
-
-
-
-
-
+            class Motor {
+                constructor(cilindradas, combustivel) {
+                this.cilindradas = cilindradas;
+                this.combustivel = combustivel;
+                    
+                      }
+                      
+                ligar() {
+                    return `Motor ${this.cilindradas} cilindradas a gasolina está ligado`;
+                          
+                      }
+                desligar() {
+                    return `Motor 1000 cilindradas a ${this.combustivel} está desligado`;
+                          
+                      }
+                      
+                  }
 /*******************************************************************************
  
 	Tarefa 2:
@@ -50,7 +53,27 @@
 		
 *******************************************************************************/
 
-
+     class Calculadora {
+         
+         constructor(n1, n2) {
+             this.n1 = n1;
+             this.n2 = n2;
+         }
+         
+         somar() {
+             return this.n1 + this.n2;
+         }
+         
+         subtrair() {
+             return this.n1 - this.n2;
+         }
+         multiplicar() {
+             return this.n1 * this.n2;
+         }
+         dividir() {
+            return this.n1 / this.n2; 
+         }
+     } 
 
 
 
@@ -83,7 +106,17 @@
 
 *******************************************************************************/
 
-
+        class Calendario {
+            static nomeDias() {
+                return ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+            }
+            
+            static diaSemana(data) {
+               const [dia, mes, ano] = data.split("/");
+               const date = new Date(`${mes}/${dia}/${ano}`);
+               return this.nomeDias()[date.getDay(0)];
+            }
+        }
 
 
 
@@ -111,8 +144,12 @@
 
 *******************************************************************************/
 
-
-
+         class CalendarioIngles extends Calendario {
+             static nomeDias() {
+                 return ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+             }
+         }
+  
 
 
 
@@ -129,5 +166,25 @@
 		retorna a lista de contatos armazenada na propriedade contatos.
 		
 *******************************************************************************/
+
+        class Agenda {
+            
+            contatos = [];
+            adicionaContato(nome, telefone) {
+                const novoContato = { nome, telefone} ;
+                this.contatos.push(novoContato);
+            }
+
+            listaContatos() {
+                return this.contatos;
+            }
+                
+        }
+
+
+
+
+
+
 
 
